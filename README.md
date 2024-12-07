@@ -6,6 +6,7 @@ Welcome to the Udemy Clone Project repository! This project is a flexible and re
 - **Homepage**: A clean and visually appealing homepage that mimics the Udemy website layout, including a navigation bar, featured courses, and footer.
 - **Flexbox Layout**: The layout is built entirely with Flexbox, ensuring a responsive and fluid design.
 - **Responsive Design**: The site uses **Media Queries** to adapt the layout for desktop, tablet, and mobile screens.
+- **Favicon**: A custom favicon representing the branding of the Udemy project, displayed on browser tabs.
 - **Simple Design**: Focused on simplicity, mimicking Udemy's design, using only HTML and CSS.
 
 ## Technologies Used
