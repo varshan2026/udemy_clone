@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Josefin Sans", serif;
+}
+
+p {
+    font-size: 16px;
+}
+
+span,
+.author {
+    color: #a435f0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    box-shadow: 3px 0px 10px rgb(184, 184, 184);
+}
+
+.navbar img {
+    width: 8%;
+}
+
+.navbar__s2 {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    width: 40%;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar__s2 input {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+}
+
+.navbar__s2 input:focus {
+    outline: none;
+}
+
+.navbar__s3,
+.navbar__s4 {
+    display: flex;
+    gap: 30px;
+}
+
+@media (max-width: 998px) {
+
+    .navbar__s3,
+    .navbar__s4 {
+        display: none;
+    }
+
+    .navbar img {
+        width: 30%;
+    }
+
+    .section-category {
+        display: none !important;
+    }
+}
+
+.section-category {
+    padding: 17px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.section-category p {
+    padding: 10px 15px;
+    background-color: #a435f0;
+    color: white;
+    border-radius: 25px;
+}
+
+.section-banner__img img {
+    width: 100%;
+}
+
+.section__heading {
+    text-align: center;
+    margin: 35px 10px;
+}
+
+.section__heading h3 {
+    color: rgb(98, 98, 98);
+}
+
+/* ------------------ recommended course -----------------*/
+
+.course-card {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.course-card__model {
+    width: 280px
+}
+
+@media(max-width: 998px){
+    .course-card__model{
+        flex-grow: 1;
+    }
+}
+
+.course-card__model img {
+    width: 100%;
+}
+
+.course-card__model>img, h3, p {
+    margin-bottom: 6px;
+}
+
+/* --------------------- recommended topics ---------------- */
+
+.section-topic__recommended {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.section-topic__recommended p {
+    padding: 15px;
+    border: 1px solid #cfd8df;
+    box-shadow: 3px 3px 10px #e2ebf2;
+    flex-grow: 1;
+    flex-basis: 20%;
+    text-align: center;
+}
+
+.section-recommended,
+.section-topic,
+.section-popular,
+.section-review {
+    padding: 35px;
+}
+
+.section_title {
+    margin-bottom: 35px;
+}
+
+/* -------------------- review testimonial container ---------------- */
+
+.section-review__container {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.section-review__content img {
+    width: 20px;
+    margin-bottom: 15px;
+}
+
+.section-review__content p {
+    margin-bottom: 15px;
+}
+
+.section-review__content {
+    padding: 25px;
+    border: 1px solid #b5d3e8;
+    flex-basis: 20%;
+}
+
+@media (max-width: 600px) {
+    .section-review__content {
+        flex-basis: 50%;
+        flex-grow: 1;
+    }
+}
+
+@media(max-width:998px){
+    .section-review__content {
+        flex-basis: 40%;
+    }
+}
+
+/* ----------------- student & users count --------------------------- */
+
+.section-count {
+    padding: 30px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #a435f0;
+    background-color:#e2ebf2;
+}
+
+@media (max-width: 600px) {
+    .section-count {
+        gap: 30px;
+    }
+}
+
+.section-count h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.section-count p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* ------------------------ top clients --------------------------------- */
+
+.section-client {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+    color: rgb(231, 231, 231);
+    background-color: black;
+    margin-top: 25px;
+    text-align: justify;
+    border-bottom: 1px solid rgb(159, 159, 159);
+}
+
+.section-client h3 {
+    padding: 10px;
+    line-height: 25px;
+}
+
+.color-light {
+    color: #d69aff;
+}
+
+@media(max-width: 600px){
+    .section-client__logo{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+}
+
+.section-client__logo img {
+    margin: 2px;
+}
+
+/* ------------------------- footer ------------------------------- */
+
+.section-footer__align {
+    color: rgb(232, 232, 232);
+    padding: 35px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: black;
+    line-height: 26px;
+    border-bottom: 1px solid rgb(159, 159, 159);
+}
+
+@media(max-width: 600px){
+    .footer__s1{
+        flex-basis: 40%;
+    }
+
+    .section-footer__align {
+        padding: 20px;
+    }
+}
+
+.footer__s1 h3 {
+    color: #d69aff;
+}
+
+.copyright {
+    background-color: black;
+    padding: 20px 35px;
+    color: white;
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
