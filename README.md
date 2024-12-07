@@ -15,7 +15,7 @@ Welcome to the Udemy Clone Project repository! This project is a flexible and re
 - **Media Queries**: To ensure the site is responsive and adjusts to different screen sizes.
 
 ## Check It Out
-You can view the Udemy Clone website by visiting link.
+You can view the Udemy Clone website by visiting https://varshan2026.github.io/udemy_clone/.
 
 ## Contributing
 If you'd like to contribute, suggest improvements, or provide feedback, feel free to open an issue or create a pull request.
