@@ -24,6 +24,10 @@ span,
     padding: 15px 30px;
     border-bottom: 1px solid rgb(216, 216, 216);
     box-shadow: 3px 0px 10px rgb(184, 184, 184);
+    position: sticky;
+    top: 0px;
+    background-color: #ffffff;
+    z-index: 999;
 }
 
 .navbar img {
@@ -315,6 +319,10 @@ span,
 
 @media screen and (min-width:601px) and (max-width: 998px) {
 
+    .navbar{
+        position: static;
+    }
+
     /* .navbar__s2, */
     .navbar__s3,
     .navbar__s4 {
@@ -368,6 +376,10 @@ span,
 
     h3{
         font-size: 1.15em;
+    }
+
+    .navbar{
+        position: static;
     }
 
     .navbar__s2,
