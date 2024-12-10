@@ -53,22 +53,29 @@ span,
 .navbar__s4 {
     display: flex;
     gap: 30px;
+    cursor: pointer;
 }
 
-@media (max-width: 998px) {
+.navbar__s5{
+    display: none;
+}
 
-    .navbar__s3,
-    .navbar__s4 {
-        display: none;
-    }
+.mylearning{
+    position: relative;
+}
 
-    .navbar img {
-        width: 30%;
-    }
+.mylearning__pop{
+    position: absolute;
+    padding: 15px;
+    width: 140px;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    background-color: black;
+    display: none;
+}
 
-    .section-category {
-        display: none !important;
-    }
+.mylearning:hover .mylearning__pop{
+    display: block;
 }
 
 .section-category {
@@ -83,11 +90,56 @@ span,
     background-color: #a435f0;
     color: white;
     border-radius: 25px;
+    border: 1px solid #a435f0;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.section-category p:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.3);
+}
+
+.section-banner__img{
+    position: relative;
 }
 
 .section-banner__img img {
     width: 100%;
 }
+
+.position{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.position p{
+    margin-top: 15px;
+    line-height: 22px;
+}
+
+.animation img{
+    width: 25%;
+    position: absolute;
+    top: 40px;
+    left: 583px;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg); 
+    }
+    100% {
+      transform: rotate(360deg); 
+    }
+  }
 
 .section__heading {
     text-align: center;
@@ -109,12 +161,6 @@ span,
 
 .course-card__model {
     width: 280px
-}
-
-@media(max-width: 998px){
-    .course-card__model{
-        flex-grow: 1;
-    }
 }
 
 .course-card__model img {
@@ -141,6 +187,14 @@ span,
     flex-grow: 1;
     flex-basis: 20%;
     text-align: center;
+    transition: 0.5s;
+}
+
+.section-topic__recommended p:hover{
+    background-color: #ceefff;
+    border: 1px solid #8fdaff;
+    transform: translateY(-12px);
+    box-shadow: 5px 5px 15px #ceefff;
 }
 
 .section-recommended,
@@ -175,19 +229,7 @@ span,
     padding: 25px;
     border: 1px solid #b5d3e8;
     flex-basis: 20%;
-}
-
-@media (max-width: 600px) {
-    .section-review__content {
-        flex-basis: 50%;
-        flex-grow: 1;
-    }
-}
-
-@media(max-width:998px){
-    .section-review__content {
-        flex-basis: 40%;
-    }
+    flex-grow: 1;
 }
 
 /* ----------------- student & users count --------------------------- */
@@ -203,11 +245,7 @@ span,
     background-color:#e2ebf2;
 }
 
-@media (max-width: 600px) {
-    .section-count {
-        gap: 30px;
-    }
-}
+
 
 .section-count h1 {
     font-size: 50px;
@@ -244,14 +282,6 @@ span,
     color: #d69aff;
 }
 
-@media(max-width: 600px){
-    .section-client__logo{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 5px;
-    }
-}
-
 .section-client__logo img {
     margin: 2px;
 }
@@ -270,16 +300,6 @@ span,
     border-bottom: 1px solid rgb(159, 159, 159);
 }
 
-@media(max-width: 600px){
-    .footer__s1{
-        flex-basis: 40%;
-    }
-
-    .section-footer__align {
-        padding: 20px;
-    }
-}
-
 .footer__s1 h3 {
     color: #d69aff;
 }
@@ -292,3 +312,132 @@ span,
     align-items: baseline;
     gap: 15px;
 }
+
+@media screen and (min-width:601px) and (max-width: 998px) {
+
+    /* .navbar__s2, */
+    .navbar__s3,
+    .navbar__s4 {
+        display: none;
+    }
+
+    .navbar__s5{
+        display: block;
+        font-size: 25px;
+    }
+
+    .navbar img {
+        width: 20%;
+    }
+
+    .section-category {
+        display: none !important;
+    }
+
+    .animation img {
+        display: none;
+    }
+
+    .section_title {
+        margin-bottom: 20px;
+    }
+
+    .course-card{
+        gap: 35px;
+    }
+
+    .course-card__model{
+        flex-grow: 1;
+    }
+
+    .section-review__content {
+        flex-basis: 40%;
+        flex-grow: 1;
+    }
+
+    .section-count h1{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    h3{
+        font-size: 1.15em;
+    }
+
+    .navbar__s2,
+    .navbar__s3,
+    .navbar__s4 {
+        display: none;
+    }
+
+    .navbar__s5{
+        display: block;
+        font-size: 25px;
+    }
+
+    .navbar img {
+        width: 30%;
+    }
+
+
+    .section-category {
+        display: none !important;
+    }
+
+    .position {
+        padding: 10px;
+        position: static;
+        border: none;
+        background-color: transparent;
+    }
+
+    .animation img {
+        width: 25%;
+        top: 15px;
+        left: 60px;
+    }
+
+    .section__heading {
+        display: none;
+    }
+
+    .section_title {
+        margin-bottom: 20px;
+    }
+
+    .course-card__model{
+        flex-grow: 1;
+    }
+
+    .section-count {
+        gap: 30px;
+    }
+
+    .section-review__content {
+        flex-basis: 50%;
+        flex-grow: 1;
+    }
+
+    .section-client__logo{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .footer__s1{
+        flex-basis: 40%;
+    }
+
+    .section-footer__align {
+        padding: 20px;
+    }
+}
+
+
+
